@@ -1,0 +1,4 @@
+# Deny access to sensitive files
+<FilesMatch "\.(sql|md)$">
+    Deny from all
+</FilesMatch>

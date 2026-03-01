@@ -1,0 +1,100 @@
+/* =====================================================
+   Pharmacy Management System - Custom Styles
+   ===================================================== */
+
+/* Base */
+body {
+    font-size: 15px;
+    background-color: #f5f6fa;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-radius: 6px;
+}
+.card-header {
+    font-size: 0.95rem;
+}
+
+/* Tables */
+.table th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+.table td {
+    font-size: 0.93rem;
+    vertical-align: middle;
+}
+
+/* Bigger text for readability */
+.form-control, .form-select {
+    font-size: 0.95rem;
+}
+.btn {
+    font-size: 0.93rem;
+}
+
+/* Alert badges in navbar */
+.navbar .badge {
+    font-size: 0.7rem;
+    vertical-align: top;
+}
+
+/* Quick-action buttons */
+.btn-group-sm .btn {
+    padding: 0.2rem 0.5rem;
+}
+
+/* Dashboard summary cards */
+.card .card-body h3 {
+    font-size: 1.8rem;
+}
+
+/* Print styles */
+@media print {
+    .navbar, .btn, .alert-dismissible .btn-close, footer, form {
+        display: none !important;
+    }
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    body {
+        background: #fff;
+    }
+    .container-fluid {
+        padding: 0;
+    }
+}
+
+/* Progress bars in low stock */
+.progress {
+    border-radius: 4px;
+}
+
+/* Status badges */
+.badge {
+    font-weight: 600;
+}
+
+/* Responsive table adjustments */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 0.82rem;
+        padding: 0.4rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    .card .card-body h3 {
+        font-size: 1.4rem;
+    }
+}
